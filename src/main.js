@@ -11,6 +11,11 @@ $(document).ready(function () {
 		event.preventDefault();
 		let date = new Date($('#user-date').val());
 		let dayOfWeek = date.getDay();
-		checkDay(dayOfWeek);
+		let textDayOfWeek = checkDay(dayOfWeek);
+		$('#results')
+			.empty()
+			.append(
+				`We got your input! On that date, the day was a ${textDayOfWeek}`
+			);
 	});
 });
