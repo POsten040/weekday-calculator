@@ -1,17 +1,19 @@
 {
-  "name": "tdd-template",
+  "name": "weekday-checker",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode=development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "start": "npm run build & webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "jest --coverage"
   },
   "jest": {
     "collectCoverage": true,
-    "coverageReporters": ["html"]
+    "coverageReporters": [
+      "html"
+    ]
   },
   "keywords": [],
   "author": "",
